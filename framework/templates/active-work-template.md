@@ -1,13 +1,24 @@
 # Active Work Template
 
-## description
-Current step, target outcome, and context.
+## Description
 
-## prompt
-Machine-oriented execution prompt.
+## Objective
 
-## constraints
-Boundaries, forbidden mutations, and non-goals.
+## Required Reads
+- `project/now/description.md`
+- `project/now/prompt.md`
+- `project/now/metadata.json`
 
-## validation
-Required checks, expected evidence, and completion signals.
+## Allowed Files
+
+## Forbidden Files
+
+## Exact Update Requirements
+
+## Validation Requirements
+
+## Evidence Requirements
+
+## Blocked-State Instructions
+
+## Completion Criteria

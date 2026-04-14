@@ -1,19 +1,30 @@
 # Task Template
 
-## id
+## Task ID
 `TASK-XXX`
 
-## purpose
-Clear objective of this atomic task.
+## Title
 
-## dependencies
-- `TASK-AAA`
-- `TASK-BBB`
+## Parent Feature
+`FEAT-XXX`
 
-## scope
-Specific work allowed for this task.
+## Parent Task Group
+`TG-XXX`
 
-## completion criteria
-- Criterion 1
-- Criterion 2
-- Criterion 3
+## Purpose
+
+## Dependencies
+
+## Allowed Scope
+
+## Forbidden Scope
+
+## Completion Criteria
+- [ ] Criterion 1
+
+## Validation Expectations
+
+## Evidence Expectations
+
+## Status
+`planned | ready | in_progress | blocked | done`

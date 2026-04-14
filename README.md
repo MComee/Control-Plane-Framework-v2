@@ -1,95 +1,85 @@
 # Control Plane Framework v2
 
 ## Purpose
-This repository is a framework for controlling AI-assisted project development in a single project context. It defines governance, planning synchronization, execution boundaries, and validation expectations.
+This repository is a repository-native control framework for AI-assisted software development.
 
-The framework is not an application. It does not prescribe product logic or implementation technology.
+It governs repository truth and execution alignment. It does not govern AI internals.
 
-## Control Layers
-### 1. Self-governing framework layer
-- Protects framework and planning doctrine from uncontrolled edits.
-- Prevents drift of control logic.
-- Defines routing and behavior rules for planning, execution, and validation.
+One repository instance controls one project under `project/`.
 
-### 2. Single-project control layer
-- Enforces one project per repository under `project/`.
-- Governs vision, features, task groups, tasks, priorities, active work, and evidence.
+## Control Commitments
+- Preserve framework integrity and doctrine.
+- Preserve one controlled project and its vision.
+- Preserve decomposition into features, task groups, and tasks.
+- Preserve explicit priorities and current active-work state.
+- Guide one chosen tool at a time through `project/now/` handoff.
+- Keep repository truth stable so different tools can execute against the same controlled state.
 
-### 3. Tool-agnostic execution guidance layer
-- Does not control AI tools directly.
-- Guides tools with structured context and prompts.
-- Aligns execution across ChatGPT, Gemini, Claude, Codex CLI, and local tools.
+## Operating Model
+1. Planning must synchronize to repository files.
+2. Execution must consume `project/now/`.
+3. Validation must confirm protected boundaries were respected.
+4. Evidence must be written under `project/evidence/`.
 
-## Workflow
-1. Planning
-2. Prioritization
-3. Handoff
-4. Execution
-5. Validation
+## Repository Visibility Rule
+`README.md` must contain a fully recursive, exact tree of tracked files and tracked directories. Any tracked path change requires updating this tree in the same change set.
 
-Planning artifacts are persisted in `project/docs/` and `project/vision/`. Execution is routed through `project/now/`. Validation is recorded under `project/evidence/`.
-
-## Repository Tree
+## Tracked Repository Tree
 ```text
 README.md
-
 docs/
-  overview.md
-  start-here.md
-  routing.md
   control-model.md
-
+  overview.md
+  routing.md
+  start-here.md
 framework/
   rules/
-    protected-files.md
-    planning-sync.md
     execution-boundaries.md
+    planning-sync.md
+    protected-files.md
   templates/
+    active-work-template.md
     feature-template.md
     task-group-template.md
     task-template.md
-    active-work-template.md
-
 project/
-  vision/
-    core_vision.md
-    constraints.md
-    brainstorming.md
-
+  app/
+    README.md
   docs/
+    decisions.md
+    definition_of_done.md
+    execution_control.md
     features/
       README.md
+    priorities/
+      blocked.md
+      done.md
+      later.md
+      next.md
+      now.md
+    roadmap.md
     task_groups/
       README.md
     tasks/
       README.md
-    priorities/
-      now.md
-      next.md
-      later.md
-      blocked.md
-      done.md
-      roadmap.md
-      decisions.md
-      definition_of_done.md
-
+  evidence/
+    artifacts/
+      .gitkeep
+    run_logs/
+      .gitkeep
+    test_runs/
+      .gitkeep
   now/
     description.md
-    prompt.md
     metadata.json
-
-  evidence/
-    run_logs/
-    test_runs/
-    artifacts/
-
-  app/
-    README.md
+    prompt.md
+  vision/
+    brainstorming.md
+    constraints.md
+    core_vision.md
 ```
 
-## How AI tools should use this repo
-1. Read `README.md` first.
-2. Determine current phase: planning, prioritization, handoff, execution, or validation.
-3. Follow routing rules in `docs/routing.md`.
-4. Never mutate protected files unless explicitly allowed by framework rules.
-5. Use `project/now/prompt.md` as the execution prompt source during execution.
+## Start Point
+- `docs/start-here.md`
+- `docs/control-model.md`
+- `docs/routing.md`

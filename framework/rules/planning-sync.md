@@ -3,18 +3,19 @@
 Planning must be synchronized to repository files.
 
 Any planning cycle must update, as needed:
-- vision
-- features
-- task_groups
-- tasks
-- priorities
-- active work
+- `project/vision/`
+- `project/docs/features/`
+- `project/docs/task_groups/`
+- `project/docs/tasks/`
+- `project/docs/priorities/`
+- `project/docs/roadmap.md`
+- `project/docs/decisions.md`
+- `project/docs/definition_of_done.md`
+- `project/docs/execution_control.md`
+- `project/now/`
 
-No planning may remain only in chat.
+No planning state may remain only in chat.
 
-Minimum synchronization expectation:
-- Changes in intent update `project/vision/`.
-- Changes in scope update `project/docs/features/` and `project/docs/task_groups/`.
-- Changes in work units update `project/docs/tasks/`.
-- Changes in order or status update `project/docs/priorities/`.
-- Current handoff state updates `project/now/`.
+Repository visibility requirement:
+- root `README.md` must contain a fully recursive and exact tracked file tree
+- any tracked file or path change requires corresponding tree update in `README.md`

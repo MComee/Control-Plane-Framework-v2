@@ -1,14 +1,17 @@
 # Overview
 
-This repository is a control framework for AI-assisted project delivery. It separates governance from implementation and keeps planning synchronized with repository state.
+Control Plane Framework v2 is a repository-native control system for AI-assisted software development.
 
-Primary outcomes:
-- Stable control logic.
-- Traceable planning artifacts.
-- Controlled execution handoff.
-- Evidence-based validation.
+It governs:
+- repository truth
+- planning synchronization to files
+- one-project control state
+- execution handoff through `project/now/`
+- boundary-aware validation
 
-See:
-- `docs/start-here.md`
-- `docs/control-model.md`
-- `docs/routing.md`
+It does not govern:
+- model internals
+- hidden tool behavior
+- vendor-specific orchestration internals
+
+One repository instance controls one project. Planning is valid only when synchronized to repository files.

@@ -1,13 +1,14 @@
 # Execution Boundaries
 
 Execution tools must:
-- follow the scope defined in `project/now/prompt.md`
-- not modify protected files
-- produce evidence in `project/evidence/`
+- consume `project/now/prompt.md` and `project/now/metadata.json`
+- follow allowed and forbidden path boundaries
+- write required evidence to `project/evidence/`
 
-Execution that changes governance or planning doctrine without explicit planning authorization is out of bounds.
+Execution may not rewrite planning or governance doctrine unless explicitly authorized.
 
 A valid execution record includes:
-- work performed summary
-- validation outputs or checks
-- artifact references when applicable
+- concise work summary
+- validation checks performed
+- evidence paths written
+- boundary compliance confirmation

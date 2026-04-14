@@ -1,33 +1,39 @@
 # Control Model
 
 ## Layer 1: Framework self-governance
-The framework layer defines immutable control doctrine, routing behavior, and mutation boundaries. It exists to protect structure and prevent control drift.
+Protects framework doctrine, routing rules, protected paths, planning synchronization, and execution boundaries.
 
-Responsibilities:
-- Define protected and restricted paths.
-- Define planning synchronization requirements.
-- Define execution boundaries and evidence expectations.
+This layer defines:
+- what can change
+- what cannot change
+- how to validate boundary compliance
 
-## Layer 2: Project control
-The project layer contains project-specific planning and control state under `project/`.
+## Layer 2: Single-project control
+The repository controls one project under `project/`.
 
-Responsibilities:
-- Vision and constraints.
-- Feature and task decomposition.
-- Prioritization and active work state.
-- Evidence records linked to execution.
+Governed surfaces:
+- `project/vision/`
+- `project/docs/features/`
+- `project/docs/task_groups/`
+- `project/docs/tasks/`
+- `project/docs/priorities/`
+- `project/docs/roadmap.md`
+- `project/docs/decisions.md`
+- `project/docs/definition_of_done.md`
+- `project/docs/execution_control.md`
+- `project/now/`
+- `project/evidence/`
 
 ## Layer 3: Execution guidance
-The execution guidance layer provides structured, tool-agnostic handoff for implementation work.
+Execution is guided by repository files, not AI internals.
 
-Responsibilities:
-- Define current step and objective.
-- Provide machine-readable and machine-actionable prompts.
-- Keep execution aligned with project control without direct tool lock-in.
+Execution handoff source:
+- `project/now/prompt.md`
 
-## Separation of concerns
-- Layer 1 governs process integrity.
-- Layer 2 governs project intent and planning state.
-- Layer 3 governs immediate execution behavior.
+Execution must follow `project/now/metadata.json` boundaries and validation requirements.
 
-Each layer has a distinct scope. Execution must not rewrite governance doctrine. Planning must not exist only in conversation. Validation must confirm both output quality and boundary compliance.
+## Non-negotiables
+- repository truth is authoritative
+- planning must sync to repository files
+- one repo instance controls one project
+- validation must confirm boundary integrity

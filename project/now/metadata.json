@@ -1,8 +1,56 @@
 {
-  "status": "active",
-  "phase": "handoff",
-  "current_step": "initialize-framework-baseline",
-  "owner": "unassigned",
-  "last_updated": "2026-04-14",
-  "evidence_required": true
+  "project_name": "Control Plane Framework v2",
+  "lane": "now",
+  "status": "done",
+  "task_id": "TASK-CTRL-REPO-STRUCTURE-001",
+  "allowed_paths": [
+    "README.md",
+    "docs/start-here.md",
+    "docs/overview.md",
+    "docs/routing.md",
+    "docs/control-model.md",
+    "framework/templates/feature-template.md",
+    "framework/templates/task-group-template.md",
+    "framework/templates/task-template.md",
+    "framework/templates/active-work-template.md",
+    "project/docs/roadmap.md",
+    "project/docs/decisions.md",
+    "project/docs/definition_of_done.md",
+    "project/docs/execution_control.md",
+    "project/docs/priorities/now.md",
+    "project/docs/priorities/next.md",
+    "project/docs/priorities/later.md",
+    "project/docs/priorities/blocked.md",
+    "project/docs/priorities/done.md",
+    "project/now/description.md",
+    "project/now/prompt.md",
+    "project/now/metadata.json",
+    "project/evidence/run_logs/.gitkeep",
+    "project/evidence/test_runs/.gitkeep",
+    "project/evidence/artifacts/.gitkeep",
+    "project/evidence/run_logs/*",
+    "project/evidence/test_runs/*",
+    "project/evidence/artifacts/*"
+  ],
+  "forbidden_paths": [
+    "framework/rules/*",
+    "project/vision/*",
+    "project/docs/features/*",
+    "project/docs/task_groups/*",
+    "project/docs/tasks/*",
+    "project/app/*"
+  ],
+  "validation_requirements": [
+    "required architecture paths exist",
+    "only one priorities location exists at project/docs/priorities",
+    "only one evidence surface exists at project/evidence",
+    "README includes a fully recursive exact tracked file tree",
+    "forbidden paths remained unchanged"
+  ],
+  "evidence_paths": [
+    "project/evidence/run_logs/",
+    "project/evidence/test_runs/",
+    "project/evidence/artifacts/"
+  ],
+  "updated_on": "2026-04-14"
 }
