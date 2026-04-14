@@ -1,30 +1,25 @@
 # Task Template
 
-## Task ID
-`TASK-XXX`
+---
 
-## Title
+## Task ID: 
+## Title: 
 
-## Parent Feature
-`FEAT-XXX`
+### Parent Feature: 
+### Parent Task Group: 
 
-## Parent Task Group
-`TG-XXX`
+### Purpose:
 
-## Purpose
+### Dependencies:
 
-## Dependencies
+### Allowed Scope:
 
-## Allowed Scope
+### Forbidden Scope:
 
-## Forbidden Scope
+### Completion Criteria:
 
-## Completion Criteria
-- [ ] Criterion 1
+### Validation Expectations:
 
-## Validation Expectations
+### Evidence Expectations:
 
-## Evidence Expectations
-
-## Status
-`planned | ready | in_progress | blocked | done`
+### Status: 

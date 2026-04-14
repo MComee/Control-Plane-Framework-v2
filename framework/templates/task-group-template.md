@@ -1,20 +1,18 @@
 # Task Group Template
 
-## Task Group ID
-`TG-XXX`
+---
 
-## Linked Feature
-`FEAT-XXX`
+## Task Group ID: 
+## Linked Feature: 
 
-## Purpose
+### Purpose:
 
-## Included Tasks
-- `TASK-XXX`
+### Included Tasks:
 
-## Dependencies
+### Dependencies:
 
-## Ordering
+### Ordering:
 
-## Risks
+### Risks:
 
-## Exit Condition
+### Exit Condition:

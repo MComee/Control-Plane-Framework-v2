@@ -1,24 +1,23 @@
 # Active Work Template
 
-## Description
+---
 
-## Objective
+## Description:
 
-## Required Reads
-- `project/now/description.md`
-- `project/now/prompt.md`
-- `project/now/metadata.json`
+### Objective:
 
-## Allowed Files
+### Required Reads:
 
-## Forbidden Files
+### Allowed Files:
 
-## Exact Update Requirements
+### Forbidden Files:
 
-## Validation Requirements
+### Exact Update Requirements:
 
-## Evidence Requirements
+### Validation Requirements:
 
-## Blocked-State Instructions
+### Evidence Requirements:
 
-## Completion Criteria
+### Blocked State Instructions:
+
+### Completion Criteria:

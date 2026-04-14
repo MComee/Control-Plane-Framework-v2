@@ -1,21 +1,18 @@
 # Feature Template
 
-## Feature ID
-`FEAT-XXX`
+---
 
-## Name
+## Feature ID: 
+## Name: 
 
-## Objective
+### Objective:
 
-## Scope
+### Scope:
 
-## Out of Scope
+### Out of Scope:
 
-## Dependencies
+### Dependencies:
 
-## Related Task Groups
-- `TG-XXX`
+### Related Task Groups:
 
-## Acceptance Conditions
-- [ ] Condition 1
-- [ ] Condition 2
+### Acceptance Conditions:

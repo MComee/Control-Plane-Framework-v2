@@ -1,40 +1,34 @@
 # Control Model
 
-## Layer 1: Framework self-governance
-Protects framework doctrine, routing rules, protected paths, planning synchronization, and execution boundaries.
+This document outlines the layered control model of the Control Plane Framework v2, detailing how governance and execution are managed within the repository.
 
-This layer defines:
-- what can change
-- what cannot change
-- how to validate boundary compliance
+## Control Layers:
 
-## Layer 2: Single-project control
-The repository controls one project under `project/`.
+The framework employs a three-layer control model to ensure integrity, project alignment, and guided execution.
 
-Governed surfaces:
-- `project/vision/`
-- `project/docs/features/`
-- `project/docs/task_groups/`
-- `project/docs/tasks/`
-- `project/docs/priorities/`
-- `project/docs/roadmap.md`
-- `project/docs/decisions.md`
-- `project/docs/definition_of_done.md`
-- `project/docs/execution_control.md`
-- `project/now/`
-- `project/evidence/`
+### Layer 1 — Framework Self-Governance:
 
-## Layer 3: Execution guidance
-Execution is guided by repository files, not AI internals.
+This foundational layer protects the framework's core doctrines and operational integrity. It governs:
+*   **Framework Doctrine:** Adherence to the principles and vision of the Control Plane Framework.
+*   **Routing Rules:** The mechanisms and logic that dictate information flow and task execution.
+*   **Protected Paths:** Files and directories that are considered sensitive or critical and are subject to strict access control.
+*   **Planning Synchronization:** Ensuring that all planning artifacts within the repository are consistent and up-to-date.
+*   **Execution Boundaries:** Defining and enforcing the limits within which external tools or operators can perform actions.
 
-Execution handoff source:
-- `project/now/prompt.md`
+### Layer 2 — Single-Project Control:
 
-Execution must follow `project/now/metadata.json` boundaries and validation requirements.
+This layer focuses on governing the specific project being managed by the repository. It operates under the `project/` directory and protects and governs:
+*   **`project/vision/`:** The core vision, constraints, and brainstorming for the project.
+*   **`project/docs/`:** All project-specific documentation, including features, task groups, tasks, priorities, roadmap, decisions, definition of done, and execution control.
+*   **`project/now/`:** The active work state, including descriptions, prompts, and metadata for current tasks.
+*   **`project/evidence/`:** Storage for artifacts, run logs, and test runs generated during execution.
 
-## Non-negotiables
-- repository truth is authoritative
-- planning must sync to repository files
-- one repo instance controls one project
-- validation must confirm boundary integrity
-- root `README.md` is the universal inspection surface and must remain path-accurate and fully recursive against tracked files
+### Layer 3 — Execution Guidance:
+
+This layer guides external tools (e.g., AI assistants) by providing explicit instructions on how to interact with the repository and execute tasks. It achieves this by:
+*   **Read Instructions:** Clearly specifying which files or parts of the repository an AI tool may read.
+*   **Modification Permissions:** Explicitly stating which files an AI tool is permitted to change.
+*   **Prohibited Actions:** Defining files or operations that must not be modified or accessed.
+*   **Handoff Source:** Utilizing `project/now/prompt.md` as the definitive source for the current task's objectives, scope, and requirements.
+
+This layered model ensures that the framework maintains control over its own integrity, the project it manages, and the execution of tasks against the repository's truth.
