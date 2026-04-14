@@ -37,3 +37,4 @@ Execution must follow `project/now/metadata.json` boundaries and validation requ
 - planning must sync to repository files
 - one repo instance controls one project
 - validation must confirm boundary integrity
+- root `README.md` is the universal inspection surface and must remain path-accurate and fully recursive against tracked files

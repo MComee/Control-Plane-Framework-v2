@@ -15,3 +15,5 @@ It does not govern:
 - vendor-specific orchestration internals
 
 One repository instance controls one project. Planning is valid only when synchronized to repository files.
+
+Root `README.md` is the universal entrypoint and must remain an exact mirror of tracked repository paths.
