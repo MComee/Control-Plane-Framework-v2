@@ -1,43 +1,54 @@
 # Active Work Prompt
 
-You are executing the current active-work package for Control Plane Framework v2.
+Execute the current active-work package for Control Plane Framework v2.
+
+Description:
+Maintain v2 structure and full repository-visibility compliance without broad redesign.
+
+Objective:
+Keep repository truth stable, preserve one-project control, and enforce one-tool-at-a-time execution guidance.
 
 Required reads:
 - `README.md`
-- `docs/control-model.md`
+- `docs/start-here.md`
+- `docs/overview.md`
 - `docs/routing.md`
-- `framework/rules/protected-files.md`
+- `docs/control-model.md`
 - `framework/rules/planning-sync.md`
 - `framework/rules/execution-boundaries.md`
+- `framework/rules/protected-files.md`
 - `project/now/description.md`
 - `project/now/metadata.json`
 
-Allowed changes:
-- files listed in `project/now/metadata.json.allowed_paths`
+Allowed files:
+- paths listed in the `allowed_paths` field of `project/now/metadata.json`
 
-Forbidden changes:
-- files listed in `project/now/metadata.json.forbidden_paths`
+Forbidden files:
+- paths listed in the `forbidden_paths` field of `project/now/metadata.json`
 
 Exact update requirements:
-- preserve one-project structure under `project/`
-- keep priorities only in `project/docs/priorities/`
-- keep evidence only in `project/evidence/`
-- keep `project/now/` operational for single-tool handoff
-- keep root `README.md` fully recursive and exact to tracked files
+- preserve the required `project/` architecture
+- preserve a single priorities surface at `project/docs/priorities/`
+- preserve a single evidence surface at `project/evidence/`
+- keep `project/now/` operational for handoff
+- ensure root `README.md` contains a fully recursive, exact tracked-path tree
 
 Validation requirements:
-- confirm all required paths exist
-- confirm forbidden paths were not changed
-- confirm README tree matches tracked repository files
+- verify all required architecture paths exist
+- verify no forbidden path was modified
+- verify README tree matches tracked paths
+- verify all referenced paths in docs exist
 
 Evidence requirements:
-- store validation output under `project/evidence/test_runs/`
-- store run notes under `project/evidence/run_logs/`
+- write run notes to `project/evidence/run_logs/`
+- write validation output to `project/evidence/test_runs/`
 
-Blocked-state behavior:
-- if required structure cannot be preserved without violating forbidden paths, set status to `blocked` in metadata and document the blocker in `project/docs/priorities/blocked.md`.
+Blocked-state instructions:
+- set the `status` field in `project/now/metadata.json` to `blocked`
+- document blocker in `project/docs/priorities/blocked.md`
 
 Completion criteria:
-- structure and docs are aligned
-- validation evidence exists
-- metadata status updated to `done`
+- all required updates applied
+- validation requirements passed
+- evidence artifacts written
+- metadata status set to `done`

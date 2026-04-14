@@ -1,18 +1,23 @@
 # Feature Template
 
----
+## Feature ID
+`FEATURE-...`
 
-## Feature ID: 
-## Name: 
+## Name
 
-### Objective:
+## Objective
 
-### Scope:
+## Scope
+- 
 
-### Out of Scope:
+## Out of Scope
+- 
 
-### Dependencies:
+## Dependencies
+- 
 
-### Related Task Groups:
+## Related Task Groups
+- 
 
-### Acceptance Conditions:
+## Acceptance Conditions
+- 

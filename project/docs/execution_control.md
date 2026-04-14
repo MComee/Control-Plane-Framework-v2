@@ -3,17 +3,15 @@
 Execution is single-tool, bounded, and repository-driven.
 
 Control rules:
-- execution reads `project/now/`
+- execution consumes `project/now/`
+- execution handoff source is `project/now/prompt.md`
 - execution updates only allowed paths
 - execution must not change forbidden paths
 - execution writes evidence to `project/evidence/`
-
-Handoff contract:
-1. `project/now/description.md` states the active objective.
-2. `project/now/prompt.md` states exact execution requirements.
-3. `project/now/metadata.json` enforces allowed and forbidden paths.
+- if tracked paths change, root `README.md` tree must be updated in the same change set
 
 Validation contract:
 - confirm required checks in metadata
 - confirm boundary compliance
-- confirm repository structure integrity
+- confirm structure integrity
+- confirm README tracked-path tree accuracy

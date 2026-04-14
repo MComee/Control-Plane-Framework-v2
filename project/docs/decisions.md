@@ -21,3 +21,10 @@ Decision: execution handoff source is `project/now/`, with `project/now/prompt.m
 Impact:
 - execution context is explicit and reproducible
 - active-work boundaries are enforceable
+
+## DEC-004
+Decision: root `README.md` must remain a fully recursive, exact mirror of tracked repository paths.
+
+Impact:
+- visibility stays deterministic for humans and tools
+- path drift is treated as framework non-compliance

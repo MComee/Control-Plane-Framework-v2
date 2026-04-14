@@ -6,3 +6,4 @@ A work unit is done only when all conditions are true:
 - evidence is stored under `project/evidence/`
 - protected and forbidden path boundaries were respected
 - planning and routing files remain synchronized with repository truth
+- if tracked paths changed, root `README.md` tree exactly mirrors current tracked files and tracked subdirectories

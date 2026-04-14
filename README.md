@@ -1,13 +1,25 @@
 # Control Plane Framework v2
 
-This repository is a repository-native control framework for AI-assisted software development.
+Repository-native control framework for AI-assisted software development.
 
-## Repository Structure
+## Operating Intent
+- Govern repository truth and execution alignment.
+- Control one project per repository instance under `project/`.
+- Keep planning state synchronized to repository files.
+- Drive execution from `project/now/` with one-tool-at-a-time handoff.
+- Validate that protected and forbidden boundaries were respected.
 
-```
+## Compliance Rule: Full Repository Visibility
+The root `README.md` is the universal inspection entrypoint.
+
+This file must always contain a fully recursive, exact tree of all tracked files and tracked subdirectories in this repository.
+
+If any tracked path is added, removed, renamed, or moved, this tree must be updated in the same change set. Any mismatch is framework non-compliance.
+
+## Repository Tree (Tracked Paths)
+```text
 .
 ├── README.md
-├── .git/...
 ├── docs/
 │   ├── control-model.md
 │   ├── overview.md
@@ -30,7 +42,6 @@ This repository is a repository-native control framework for AI-assisted softwar
     │   ├── decisions.md
     │   ├── definition_of_done.md
     │   ├── execution_control.md
-    │   ├── roadmap.md
     │   ├── features/
     │   │   └── README.md
     │   ├── priorities/
@@ -39,6 +50,7 @@ This repository is a repository-native control framework for AI-assisted softwar
     │   │   ├── later.md
     │   │   ├── next.md
     │   │   └── now.md
+    │   ├── roadmap.md
     │   ├── task_groups/
     │   │   └── README.md
     │   └── tasks/
@@ -47,9 +59,11 @@ This repository is a repository-native control framework for AI-assisted softwar
     │   ├── artifacts/
     │   │   └── .gitkeep
     │   ├── run_logs/
-    │   │   └── .gitkeep
+    │   │   ├── .gitkeep
+    │   │   └── 2026-04-14-v2-refinement.md
     │   └── test_runs/
-    │       └── .gitkeep
+    │       ├── .gitkeep
+    │       └── 2026-04-14-structure-validation.md
     ├── now/
     │   ├── description.md
     │   ├── metadata.json

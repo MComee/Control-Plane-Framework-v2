@@ -2,7 +2,7 @@
   "project_name": "Control Plane Framework v2",
   "lane": "now",
   "status": "done",
-  "task_id": "TASK-CTRL-REPO-STRUCTURE-001",
+  "task_id": "TASK-CTRL-V2-ALIGNMENT-001",
   "allowed_paths": [
     "README.md",
     "docs/start-here.md",
@@ -45,6 +45,7 @@
     "only one priorities location exists at project/docs/priorities",
     "only one evidence surface exists at project/evidence",
     "README includes a fully recursive exact tracked file tree",
+    "all doc path references resolve to real paths",
     "forbidden paths remained unchanged"
   ],
   "evidence_paths": [

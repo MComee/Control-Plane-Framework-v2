@@ -1,18 +1,24 @@
 # Task Group Template
 
----
+## Task Group ID
+`TG-...`
 
-## Task Group ID: 
-## Linked Feature: 
+## Linked Feature
+`FEATURE-...`
 
-### Purpose:
+## Purpose
 
-### Included Tasks:
+## Included Tasks
+- `TASK-...`
 
-### Dependencies:
+## Dependencies
+- 
 
-### Ordering:
+## Ordering
+- sequence and gating rules for included tasks
 
-### Risks:
+## Risks
+- 
 
-### Exit Condition:
+## Exit Condition
+- all included tasks complete with required validation and evidence

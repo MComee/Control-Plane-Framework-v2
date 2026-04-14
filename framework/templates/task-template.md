@@ -1,25 +1,35 @@
 # Task Template
 
----
+## Task ID
+`TASK-...`
 
-## Task ID: 
-## Title: 
+## Title
 
-### Parent Feature: 
-### Parent Task Group: 
+## Parent Feature
+`FEATURE-...`
 
-### Purpose:
+## Parent Task Group
+`TG-...`
 
-### Dependencies:
+## Purpose
 
-### Allowed Scope:
+## Dependencies
+- 
 
-### Forbidden Scope:
+## Allowed Scope
+- explicit file paths or path globs that may be changed
 
-### Completion Criteria:
+## Forbidden Scope
+- explicit file paths or path globs that must not be changed
 
-### Validation Expectations:
+## Completion Criteria
+- 
 
-### Evidence Expectations:
+## Validation Expectations
+- required checks, commands, and boundary confirmations
 
-### Status: 
+## Evidence Expectations
+- required output paths under `project/evidence/`
+
+## Status
+`todo | in_progress | blocked | done`

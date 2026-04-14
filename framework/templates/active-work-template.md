@@ -1,23 +1,32 @@
 # Active Work Template
 
----
+## Description
 
-## Description:
+## Objective
 
-### Objective:
+## Required Reads
+- 
 
-### Required Reads:
+## Allowed Files
+- 
 
-### Allowed Files:
+## Forbidden Files
+- 
 
-### Forbidden Files:
+## Exact Update Requirements
+- 
 
-### Exact Update Requirements:
+## Validation Requirements
+- 
 
-### Validation Requirements:
+## Evidence Requirements
+- 
 
-### Evidence Requirements:
+## Blocked-State Instructions
+- set `project/now/metadata.json.status` to `blocked`
+- record blocker in `project/docs/priorities/blocked.md`
 
-### Blocked State Instructions:
-
-### Completion Criteria:
+## Completion Criteria
+- all update requirements met
+- all validation requirements passed
+- all evidence requirements written
